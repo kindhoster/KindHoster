@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KindHoster - Friendly, Affordable Web Hosting" />
+  <title>KindHoster - Friendly Web Hosting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f5faff;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0077cc;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(to right, #d8f0ff, #f5faff);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .cta-button {
+      margin-top: 2rem;
+      background-color: #0077cc;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .pricing-table {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .plan {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 2rem;
+      width: 300px;
+    }
+    .plan h3 {
+      color: #0077cc;
+    }
+    .plan ul {
+      list-style: none;
+      padding: 0;
+    }
+    .plan ul li {
+      margin: 10px 0;
+    }
+    .order-btn {
+      margin-top: 1rem;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #fff;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">KindHoster</div>
+    <nav>
+      <a href="#pricing">Plans</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Friendly Web Hosting for Everyone</h1>
+    <p>Fast, secure and affordable hosting with 24/7 support.</p>
+    <button class="cta-button" onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });">View Plans</button>
+  </section>
+
+  <section class="section" id="pricing">
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-table">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p><strong>$1.99/month</strong></p>
+        <ul>
+          <li>1 Website</li>
+          <li>10 GB SSD</li>
+          <li>Free SSL</li>
+          <li>Email Support</li>
+        </ul>
+        <a href="https://wa.me/1234567890" class="order-btn">Order Now</a>
+      </div>
+      <div class="plan">
+        <h3>Standard</h3>
+        <p><strong>$3.99/month</strong></p>
+        <ul>
+          <li>5 Websites</li>
+          <li>50 GB SSD</li>
+          <li>Free SSL + Daily Backup</li>
+          <li>Priority Support</li>
+        </ul>
+        <a href="https://wa.me/1234567890" class="order-btn">Order Now</a>
+      </div>
+      <div class="plan">
+        <h3>Premium</h3>
+        <p><strong>$6.99/month</strong></p>
+        <ul>
+          <li>Unlimited Websites</li>
+          <li>Unlimited Storage</li>
+          <li>Advanced Security</li>
+          <li>24/7 VIP Support</li>
+        </ul>
+        <a href="https://wa.me/1234567890" class="order-btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 KindHoster. All rights reserved.
+  </footer>
+</body>
+</html>
